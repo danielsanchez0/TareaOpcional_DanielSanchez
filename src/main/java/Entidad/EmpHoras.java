@@ -10,7 +10,8 @@ import jakarta.persistence.Entity;
 
 /**
  *
- * @author usuario
+ * @author DANIEL FERNANDO SANCHEZ ORTIZ
+ * @version 1.0
  */
 @Entity
 @DiscriminatorValue("horas")
@@ -23,6 +24,13 @@ public class EmpHoras extends Empleados {
     public EmpHoras() {
     }
 
+    /**
+     *
+     * @param identificador
+     * @param nombre
+     * @param valor_horas
+     * @param horas_trabajadas
+     */
     public EmpHoras(int identificador, String nombre, double valor_horas, float horas_trabajadas) {
         super(identificador, nombre);
         this.valor_horas = valor_horas;
@@ -57,6 +65,11 @@ public class EmpHoras extends Empleados {
         this.horas_trabajadas = horas_trabajadas;
     }
 
+    /**
+     * calcular el salario de cada empleadode tipo empleado por horas.
+     *
+     * @return
+     */
     @Override
     public double calcularSalario() {
         double salario = this.valor_horas * this.horas_trabajadas;
@@ -66,6 +79,11 @@ public class EmpHoras extends Empleados {
         }
 
         return salario;
+    }
+
+    @Override
+    public String toString() {
+        return this.getIdentificador() + " " + this.getNombre() + " " + this.valor_horas + " " + this.horas_trabajadas;
     }
 
 }

@@ -10,7 +10,8 @@ import jakarta.persistence.Entity;
 
 /**
  *
- * @author usuario
+ * @author DANIEL FERNANDO SANCHEZ ORTIZ
+ * @version 1.0
  */
 @Entity
 @DiscriminatorValue("asalariado")
@@ -22,6 +23,13 @@ public class EmpAsalariados extends Empleados {
     public EmpAsalariados() {
     }
 
+    /**
+     * inicializa la variable de tipo EmpAsalariado
+     *
+     * @param salario_semanal
+     * @param identificador
+     * @param nombre
+     */
     public EmpAsalariados(double salario_semanal, int identificador, String nombre) {
         super(identificador, nombre);
         this.salario_semanal = salario_semanal;
@@ -41,9 +49,17 @@ public class EmpAsalariados extends Empleados {
         this.salario_semanal = salario_semanal;
     }
 
+    /**
+     *
+     * @return el salario del empleado.
+     */
     @Override
     public double calcularSalario() {
         return salario_semanal;
     }
 
+    @Override
+    public String toString() {
+        return this.getIdentificador() + " " + this.getNombre() + " " + this.getSalario_semanal();
+    }
 }

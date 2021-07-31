@@ -12,8 +12,10 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 
 /**
+ * clase empleados
  *
- * @author usuario
+ * @author DANIEL FERNANDO SANCHEZ ORTIZ
+ * @version 1.0
  */
 @Entity
 @Inheritance(strategy
@@ -29,6 +31,11 @@ public abstract class Empleados {
     public Empleados() {
     }
 
+    /**
+     *
+     * @param identificador, identica al empleado
+     * @param nombre , nombre del empleado
+     */
     public Empleados(int identificador, String nombre) {
         this.identificador = identificador;
         this.nombre = nombre;
@@ -61,6 +68,6 @@ public abstract class Empleados {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
+
     public abstract double calcularSalario();
 }
