@@ -57,4 +57,15 @@ public class EmpHoras extends Empleados {
         this.horas_trabajadas = horas_trabajadas;
     }
 
+    @Override
+    public double calcularSalario() {
+        double salario = this.valor_horas * this.horas_trabajadas;
+
+        if (this.horas_trabajadas > 40) {
+            salario = salario + 200000;
+        }
+
+        return salario;
+    }
+
 }

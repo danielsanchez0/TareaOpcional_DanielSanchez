@@ -41,4 +41,9 @@ public class EmpAsalariados extends Empleados {
         this.salario_semanal = salario_semanal;
     }
 
+    @Override
+    public double calcularSalario() {
+        return salario_semanal;
+    }
+
 }

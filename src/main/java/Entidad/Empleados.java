@@ -20,7 +20,7 @@ import jakarta.persistence.InheritanceType;
         = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name
         = "tipo")
-public class Empleados {
+public abstract class Empleados {
 
     @Id
     private int identificador;
@@ -61,5 +61,6 @@ public class Empleados {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+    
+    public abstract double calcularSalario();
 }

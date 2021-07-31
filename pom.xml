@@ -22,8 +22,8 @@
             <version>3.0.0</version>
         </dependency>
         <dependency>
-            <groupId>sqlite</groupId>
-            <artifactId>sqlite</artifactId>
+            <groupId>group_1</groupId>
+            <artifactId>artifact_1</artifactId>
             <version>1</version>
         </dependency>
     </dependencies>
