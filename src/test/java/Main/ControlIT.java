@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
+ * pruebas unitarias para la clase control.
  * @author DANIEL FERNANDO SANCHEZ ORTIZ
  * @version 1.0
  */
