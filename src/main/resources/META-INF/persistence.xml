@@ -7,10 +7,10 @@
     <class>Entidad.Empleados</class>
     <properties>
       <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
-      <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:C:\Users\usuario\Desktop\basesSoftware\empleados.db"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:C:\Users\usuario\Documents\NetBeansProjects\TareaOpcional_DanielSanchez\empleados.db"/>
       <property name="eclipselink.ddl-generation" value="create-tables"/>
       <property name="eclipselink.target-database" value="database"/>
-      <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:C:\Users\usuario\Desktop\basesSoftware\empleados.db"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:C:\Users\usuario\Documents\NetBeansProjects\TareaOpcional_DanielSanchez\empleados.db"/>
       <property name="javax.persistence.jdbc.user" value=""/>
       <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
       <property name="javax.persistence.jdbc.password" value=""/>
